@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("/static/img/desktop/fundo-marajoara.png");
+}
+
+#coluna-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+#coluna-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em;
+}
+
+#secundaria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(149, 196, 60);
+    background-image: none;
+}
+
+#terciaria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("/static/img/desktop/fundo-tecido.png")
+}
+
+#subscription-form {
+    background-color: rgb(14, 106, 69);
+    border-radius: 5px;
+}
+
+.form-floating {
+    justify-content: space-between;
+}
+
+h3 {
+    color: rgb(14, 106, 69);
+    text-align: center;
+    margin: 1em;
+}
+
+h2 {
+    margin: 1em;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.5em;
+}
+
+input {
+    padding: 5px;
+}
+
+iframe {
+    margin: 2em;
+    border-radius: 10px;
+}
+
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.4em;
+    background-color: rgb(14, 106, 69);
+    background-image: none;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer a {
+    margin: 0.5em;
+}
+
+a:link {color: grey;}
+a:visited {color: grey;}
+a:hover {color: blueviolet;}
+
+/*Mobile*/
+@media (max-width: 768px) {
+    #principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    #secundaria {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    #terciaria {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    iframe {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    img {
+        display: flex;
+        align-items: center;
+    }
+
+}
