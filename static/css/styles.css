@@ -7,7 +7,7 @@
 .background {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-image: url("/static/img/desktop/fundo-marajoara.png");
 }
 
@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
     margin: 2em;
 }
 
@@ -32,6 +31,7 @@
     flex-direction: column;
     background-color: rgb(149, 196, 60);
     background-image: none;
+    padding: 2em;
 }
 
 #terciaria {
@@ -44,10 +44,6 @@
 #subscription-form {
     background-color: rgb(14, 106, 69);
     border-radius: 5px;
-}
-
-.form-floating {
-    justify-content: space-between;
 }
 
 h3 {
@@ -111,9 +107,17 @@ footer a {
     margin: 0.5em;
 }
 
-a:link {color: grey;}
-a:visited {color: grey;}
-a:hover {color: blueviolet;}
+a:link {
+    color: grey;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: blueviolet;
+}
 
 /*Mobile*/
 @media (max-width: 768px) {
