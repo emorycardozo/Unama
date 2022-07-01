@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#secundaria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(149, 196, 60);
+    background-image: none;
+    padding: 2em;
+}
