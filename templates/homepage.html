@@ -60,20 +60,23 @@
                 </div>
                 <h3>Preencha o formulário abaixo e converse com a nossa equipe!</h3>
                 <div id="subscription-form">
-                    <form action="">
+                    <span id="info"></span>
+                    <form action="https://sheetdb.io/api/v1/mvllhcap8h8yt" method="post" id="form">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingName" placeholder="Nome">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome" name="data[nome]">
                             <label for="floatingInput">Nome</label>
                         </div>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingPhone" placeholder="Whatsapp">
+                            <input type="text" class="form-control" id="phone" placeholder="Whatsapp"
+                                name="data[whatsapp]">
                             <label for="floatingInput">Whatsapp</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                name="data[email]">
                             <label for="floatingInput">Email </label>
                         </div>
-                        <button type="submit" formaction="/obrigado" class="btn btn-success btn-lg">Enviar</button>
+                        <button id="button" type="submit" class="btn btn-success btn-lg">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -116,6 +119,7 @@
         </a>
     </footer>
     </div>
+    <script src="/static/js/index.js"></script>
 </body>
 
 </html>

@@ -10,5 +10,5 @@ def index():
 
 
 @app.route("/obrigado")
-def obrigado():
-    return render_template("ty-page.html")
+def typ():
+    return render_template("typ-unama.html")
