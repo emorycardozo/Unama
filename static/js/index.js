@@ -9,9 +9,15 @@ form.addEventListener('submit', (e) => {
         info.innerHTML = 'Preencha todos os campos!'
         removerMessage(info)
     } else if (validationEmail(email.value) === true) {
-        SubmitEvent('submit')
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(document.getElementById('form')),
+        }).then(
+            response => response.json()
+        ).then((html) => {
+            window.location.href = '/obrigado'
+        })
     }
-
     e.preventDefault()
 })
 
